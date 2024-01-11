@@ -16,3 +16,23 @@ for index in indices:
     print(index)
 
 es_client.close()
+
+
+# 连接到Elasticsearch实例
+es = Elasticsearch("http://localhost:9200")
+
+# 指定要查询的索引
+index_name = "your_index_name"
+
+# 构建查询体
+query_body = {
+    "query": {
+        "match_all": {}
+    }
+}
+
+# 执行查询
+response = es.search(index=index_name, body=query_body)
+
+# 输出查询结果
+print(response)

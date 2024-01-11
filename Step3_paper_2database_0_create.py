@@ -1,7 +1,7 @@
 from elasticsearch import Elasticsearch
 import pandas as pd
 from pprint import pprint
-ES_URL = "https://elastic:5ArG61tGJZFROSzbDUoc@oil.dsai.vip:9200"
+ES_URL = "https://elastic:mg8RfGAgIIJ80ts5YtLO@58.37.114.191:7360"
 es_client = Elasticsearch(ES_URL, verify_certs=False)
 
 
